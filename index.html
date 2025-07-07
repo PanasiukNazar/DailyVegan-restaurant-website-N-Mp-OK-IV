@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>DailyVegan</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta
+            content="здоровое питание, доставка еды, веганское меню, рацион на день, полезная еда, готовые блюда, здоровый рацион, правильное питание, доставка рационов, веганская доставка"
+            name="keywords"
+        />
+        <meta
+            content="Попробуйте вкусное и сбалансированное питание с доставкой. Натуральные ингредиенты, веганские блюда, индивидуальные рационы. Закажите здоровую еду прямо на дом!"
+            name="description"
+        />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Montserrat:wght@200;400;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar start -->
+        <div
+            class="container-fluid border-bottom bg-light wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div
+                class="container topbar bg-primary d-none d-lg-block py-2"
+                style="border-radius: 0 40px"
+            >
+                <div class="d-flex justify-content-between">
+                    <div class="top-info ps-2">
+                        <small class="me-3"
+                            ><i
+                                class="fas fa-map-marker-alt me-2 text-secondary"
+                            ></i>
+                            <a href="#" class="text-white"
+                                >Кенесары көшесі 20, Астана 010000, Казахстан</a
+                            ></small
+                        >
+                        <small class="me-3"
+                            ><i class="fas fa-envelope me-2 text-secondary"></i
+                            ><a href="#" class="text-white"
+                                >daily_vegan@gmail.com</a
+                            ></small
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="container px-0">
+                <nav class="navbar navbar-light navbar-expand-xl py-3">
+                    <a href="index.html" class="navbar-brand"
+                        ><h1 class="text-primary display-6">
+                            Daily<span class="text-secondary">Vegan</span>
+                        </h1></a
+                    >
+                    <button
+                        class="navbar-toggler py-2 px-3"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse"
+                    >
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a
+                                href="index.html"
+                                class="nav-item nav-link active"
+                                >Главная</a
+                            >
+                            <a href="about.html" class="nav-item nav-link"
+                                >О нас</a
+                            >
+                            <a href="service.html" class="nav-item nav-link"
+                                >Услуги</a
+                            >
+                            <a href="testimonial.html" class="nav-item nav-link"
+                                >Отзывы</a
+                            >
+                            <a href="contact.html" class="nav-item nav-link"
+                                >Контакты</a
+                            >
+                        </div>
+                        <div class="d-flex me-4">
+                            <div
+                                id="phone-tada"
+                                class="d-flex align-items-center justify-content-center"
+                            >
+                                <a
+                                    href=""
+                                    class="position-relative wow tada"
+                                    data-wow-delay=".9s"
+                                >
+                                    <i
+                                        class="fa fa-phone-alt text-primary fa-2x me-4"
+                                    ></i>
+                                    <div
+                                        class="position-absolute"
+                                        style="top: -7px; left: 20px"
+                                    >
+                                        <span
+                                            ><i
+                                                class="fa fa-comment-dots text-secondary"
+                                            ></i
+                                        ></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="d-flex flex-column pe-3 border-end border-primary"
+                            >
+                                <span class="text-primary">Есть вопросы?</span>
+                                <a href="tel:77011551322"
+                                    ><span class="text-secondary"
+                                        >Бесплатно: +77011551322</span
+                                    ></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Hero Start -->
+        <div
+            class="container-fluid py-5 hero-header wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-7 col-md-12">
+                        <h1 class="mb-5 display-1 text-white">
+                            Персонализированное питание для вашего здоровья и
+                            энергии
+                        </h1>
+                        <a
+                            href="contact.html"
+                            class="btn btn-primary px-4 py-3 px-md-5 me-4 btn-border-radius"
+                            >Оформить заказ</a
+                        >
+                        <a
+                            href="about.html"
+                            class="btn btn-primary px-4 py-3 px-md-5 btn-border-radius"
+                            >Узнать больше</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <!-- About Start -->
+        <div class="container-fluid py-5 about">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="approach border"></div>
+                    </div>
+                    <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+                        <h4
+                            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+                        >
+                            Наш подход
+                        </h4>
+                        <h1 class="text-dark mb-4 display-5">
+                            Здоровое питание с доставкой — вкусно, полезно,
+                            удобно
+                        </h1>
+                        <p class="text-dark mb-4">
+                            Мы предлагаем готовые решения для тех, кто заботится
+                            о здоровье. Наши веганские и сбалансированные блюда
+                            разрабатываются диетологами, готовятся из свежих и
+                            натуральных продуктов и доставляются к вам домой или
+                            в офис. Выбирайте рацион, который подходит именно
+                            вам — от лёгкого детокса до питания для активного
+                            образа жизни. Мы подходим к каждому клиенту
+                            индивидуально, чтобы вы получали максимум пользы и
+                            удовольствия от еды.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Main Services Start -->
+        <div class="container-fluid py-5 services">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div
+                        class="col-lg-12 text-center wow fadeIn"
+                        data-wow-delay="0.1s"
+                    >
+                        <h4
+                            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+                        >
+                            Наши услуги
+                        </h4>
+                        <h1 class="mb-2 display-3">
+                            Что мы предлагаем для вашего здорового питания
+                        </h1>
+
+                        <p class="text-dark mb-4">
+                            Мы предоставляем полный спектр услуг по доставке
+                            полезной и веганской еды. Наша команда заботится о
+                            вашем рационе, создавая сбалансированные блюда из
+                            натуральных ингредиентов. От подбора меню до
+                            ежедневной доставки — всё продумано до мелочей,
+                            чтобы вы могли наслаждаться вкусной и здоровой едой
+                            без лишних хлопот.
+                        </p>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <!-- Service 1 -->
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeIn"
+                        data-wow-delay="0.3s"
+                    >
+                        <div
+                            class="service-card border rounded p-4 text-center"
+                        >
+                            <h4 class="text-primary mb-3">
+                                Индивидуальный рацион
+                            </h4>
+                            <p class="text-dark">
+                                Подберём для вас персональное веганское или
+                                сбалансированное меню, соответствующее вашим
+                                целям — будь то снижение веса, набор энергии или
+                                очищение организма.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeIn"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="service-card border rounded p-4 text-center"
+                        >
+                            <h4 class="text-primary mb-3">
+                                Ежедневная доставка
+                            </h4>
+                            <p class="text-dark">
+                                Готовая еда доставляется ежедневно прямо к вашей
+                                двери. Мы используем экологичную упаковку и
+                                бережём свежесть каждого блюда.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div
+                        class="col-lg-4 col-md-6 wow fadeIn"
+                        data-wow-delay="0.7s"
+                    >
+                        <div
+                            class="service-card border rounded p-4 text-center"
+                        >
+                            <h4 class="text-primary mb-3">
+                                Натуральные продукты
+                            </h4>
+                            <p class="text-dark">
+                                Все наши блюда готовятся из свежих овощей,
+                                злаков и суперфудов. Мы не используем
+                                рафинированные продукты, сахар и консерванты.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Services End -->
+
+        <!-- Service Start -->
+        <div class="container-fluid service py-5">
+            <div class="container py-5">
+                <div
+                    class="mx-auto text-center wow fadeIn"
+                    data-wow-delay="0.1s"
+                    style="max-width: 700px"
+                >
+                    <h4
+                        class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+                    >
+                        Почему выбирают нас
+                    </h4>
+                    <h1 class="mb-2 display-3">
+                        Еда, которая заботится о вашем здоровье
+                    </h1>
+                    <p class="mb-5">
+                        Мы верим, что правильное питание должно быть доступным,
+                        вкусным и простым. Наша команда — это повара, диетологи
+                        и логисты, которые каждый день работают над тем, чтобы
+                        вы получали свежие и полезные блюда без усилий. Мы
+                        учитываем ваши предпочтения, режим дня и цели, чтобы
+                        создать для вас идеальный рацион.
+                    </p>
+                </div>
+                <div class="row g-5">
+                    <div
+                        class="col-md-6 col-lg-6 col-xl-3 wow fadeIn"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="text-center border-primary border bg-white service-item"
+                        >
+                            <div
+                                class="service-content d-flex align-items-center justify-content-center p-4"
+                            >
+                                <div class="service-content-inner">
+                                    <a href="#" class="h4">Гибкое меню</a>
+                                    <p class="my-3">
+                                        Возможность выбора: от классических
+                                        рационов до веганских и безглютеновых
+                                        программ — мы подстраиваемся под ваши
+                                        пожелания.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-6 col-xl-3 wow fadeIn"
+                        data-wow-delay="0.3s"
+                    >
+                        <div
+                            class="text-center border-primary border bg-white service-item"
+                        >
+                            <div
+                                class="service-content d-flex align-items-center justify-content-center p-4"
+                            >
+                                <div class="service-content-inner">
+                                    <a href="#" class="h4">Свежие продукты</a>
+                                    <p class="my-3">
+                                        Мы работаем только с проверенными
+                                        поставщиками свежих овощей, фруктов и
+                                        круп — никаких полуфабрикатов или
+                                        заморозки.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-6 col-xl-3 wow fadeIn"
+                        data-wow-delay="0.5s"
+                    >
+                        <div
+                            class="text-center border-primary border bg-white service-item"
+                        >
+                            <div
+                                class="service-content d-flex align-items-center justify-content-center p-4"
+                            >
+                                <div class="service-content-inner">
+                                    <a href="#" class="h4">Контроль качества</a>
+                                    <p class="my-3">
+                                        Каждое блюдо проходит проверку на
+                                        свежесть, вкус и пищевую ценность. Мы
+                                        строго соблюдаем стандарты
+                                        приготовления.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-6 col-xl-3 wow fadeIn"
+                        data-wow-delay="0.7s"
+                    >
+                        <div
+                            class="text-center border-primary border bg-white service-item"
+                        >
+                            <div
+                                class="service-content d-flex align-items-center justify-content-center p-4"
+                            >
+                                <div class="service-content-inner">
+                                    <a href="#" class="h4"
+                                        >Постоянная поддержка</a
+                                    >
+                                    <p class="my-3">
+                                        Наши специалисты готовы помочь вам с
+                                        выбором меню и ответить на все вопросы.
+                                        Мы на связи каждый день.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Programs Start -->
+        <div class="container-fluid program py-5">
+            <div class="container py-5">
+                <div
+                    class="mx-auto text-center wow fadeIn"
+                    data-wow-delay="0.1s"
+                    style="max-width: 700px"
+                >
+                    <h4
+                        class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+                    >
+                        Наши особенности
+                    </h4>
+                    <h1 class="mb-2 display-3">
+                        Что делает наш сервис питания уникальным
+                    </h1>
+                    <p class="mb-5">
+                        Мы предлагаем индивидуальные программы здорового питания
+                        и веганские рационы с доставкой. Всё — от подбора
+                        ингредиентов до логистики — выстроено так, чтобы вы
+                        получали вкусные, полезные и свежие блюда каждый день.
+                        Наши решения помогают вам питаться правильно без лишних
+                        усилий.
+                    </p>
+                </div>
+                <div class="row g-5 justify-content-center">
+                    <div
+                        class="col-md-6 col-lg-6 col-xl-4 wow fadeIn"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="program-item rounded">
+                            <div class="program-img position-relative">
+                                <div class="overflow-hidden img-border-radius">
+                                    <img
+                                        src="img/program-1.jpg"
+                                        class="img-fluid w-100"
+                                        alt="Image"
+                                    />
+                                </div>
+                            </div>
+                            <div class="program-text bg-white px-4 pb-3">
+                                <div class="program-text-inner">
+                                    <a href="#" class="h4"
+                                        >Персонализированные рационы</a
+                                    >
+                                    <p class="mt-3 mb-0">
+                                        Мы учитываем ваш образ жизни, цели и
+                                        вкусовые предпочтения. Наши диетологи
+                                        формируют рационы с нужной калорийностью
+                                        и балансом нутриентов — всё, чтобы вы
+                                        чувствовали себя лучше каждый день.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-6 col-xl-4 wow fadeIn"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="program-item rounded">
+                            <div class="program-img position-relative">
+                                <div class="overflow-hidden img-border-radius">
+                                    <img
+                                        src="img/program-2.jpg"
+                                        class="img-fluid w-100"
+                                        alt="Image"
+                                    />
+                                </div>
+                            </div>
+                            <div class="program-text bg-white px-4 pb-3">
+                                <div class="program-text-inner">
+                                    <a href="#" class="h4"
+                                        >Улучшение пищевых привычек</a
+                                    >
+                                    <p class="mt-3 mb-0">
+                                        Мы помогаем выстроить правильный режим
+                                        питания. Наши рационы формируют
+                                        устойчивые полезные привычки — от
+                                        регулярного приёма пищи до осознанного
+                                        выбора ингредиентов.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-6 col-xl-4 wow fadeIn"
+                        data-wow-delay="0.5s"
+                    >
+                        <div class="program-item rounded">
+                            <div class="program-img position-relative">
+                                <div class="overflow-hidden img-border-radius">
+                                    <img
+                                        src="img/program-3.jpg"
+                                        class="img-fluid w-100"
+                                        alt="Image"
+                                    />
+                                </div>
+                            </div>
+                            <div class="program-text bg-white px-4 pb-3">
+                                <div class="program-text-inner">
+                                    <a href="#" class="h4"
+                                        >Рационы на основе данных</a
+                                    >
+                                    <p class="mt-3 mb-0">
+                                        Мы используем анкетирование и анализ
+                                        потребностей, чтобы предложить вам
+                                        рацион, подходящий именно вам. Каждое
+                                        меню составляется с учётом ваших целей —
+                                        будь то поддержание формы, снижение веса
+                                        или восстановление энергии.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Program End -->
+
+        <!-- Blog Start-->
+        <div class="container-fluid blog py-5">
+            <div class="container py-5">
+                <div
+                    class="mx-auto text-center wow fadeIn"
+                    data-wow-delay="0.1s"
+                    style="max-width: 600px"
+                >
+                    <h4
+                        class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+                    >
+                        Блог и новости
+                    </h4>
+                    <h1 class="mb-2 display-3">
+                        Советы по питанию и здоровому образу жизни
+                    </h1>
+                    <p class="mb-5">
+                        В нашем блоге вы найдёте рекомендации по правильному
+                        питанию, подбору рациона и организации здорового образа
+                        жизни. Мы делимся простыми и полезными советами,
+                        рецептами, объясняем, как формировать привычки,
+                        укрепляющие здоровье. Читайте свежие статьи, чтобы
+                        питаться осознанно и разнообразно.
+                    </p>
+                </div>
+                <div class="row g-5 justify-content-center">
+                    <div
+                        class="col-md-6 col-lg-6 col-xl-6 wow fadeIn"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="blog-item rounded-bottom">
+                            <div
+                                class="blog-img overflow-hidden position-relative img-border-radius"
+                            >
+                                <img
+                                    src="img/blog-1.jpg"
+                                    class="img-fluid w-100"
+                                    alt="Image"
+                                />
+                            </div>
+                            <div
+                                class="d-flex justify-content-between px-4 py-3 bg-light border-bottom border-primary blog-date-comments"
+                            >
+                                <small class="text-dark">
+                                    <i
+                                        class="fas fa-calendar me-1 text-dark"
+                                    ></i>
+                                    29 ноя 2023</small
+                                >
+                                <small class="text-dark">
+                                    <i
+                                        class="fas fa-comment-alt me-1 text-dark"
+                                    ></i>
+                                    Комментарии (15)</small
+                                >
+                            </div>
+                            <div class="px-4 pb-4 bg-light pt-4 rounded-bottom">
+                                <div class="blog-text-inner">
+                                    <a href="#" class="h4">
+                                        Как организовать питание на неделю:
+                                        советы и примеры
+                                    </a>
+                                    <p class="mt-3 mb-4">
+                                        В статье рассказываем, как спланировать
+                                        питание на каждый день, не тратя много
+                                        времени. Поделимся базовыми принципами,
+                                        которые помогут вам держать рацион под
+                                        контролем и питаться сбалансировано.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-lg-6 col-xl-6 wow fadeIn"
+                        data-wow-delay="0.3s"
+                    >
+                        <div class="blog-item rounded-bottom">
+                            <div
+                                class="blog-img overflow-hidden position-relative img-border-radius"
+                            >
+                                <img
+                                    src="img/blog-2.jpg"
+                                    class="img-fluid w-100"
+                                    alt="Image"
+                                />
+                            </div>
+                            <div
+                                class="d-flex justify-content-between px-4 py-3 bg-light border-bottom border-primary blog-date-comments"
+                            >
+                                <small class="text-dark">
+                                    <i
+                                        class="fas fa-calendar me-1 text-dark"
+                                    ></i>
+                                    18 сен 2024</small
+                                >
+                                <small class="text-dark">
+                                    <i
+                                        class="fas fa-comment-alt me-1 text-dark"
+                                    ></i>
+                                    Комментарии (215)</small
+                                >
+                            </div>
+
+                            <div class="px-4 pb-4 pt-4 bg-light rounded-bottom">
+                                <div class="blog-text-inner">
+                                    <a href="#" class="h4">
+                                        Топ-5 продуктов для энергии на весь день
+                                    </a>
+                                    <p class="mt-3 mb-4">
+                                        Мы подготовили список продуктов, которые
+                                        помогут вам чувствовать бодрость и
+                                        поддерживать концентрацию в течение дня.
+                                        Эти натуральные источники энергии
+                                        идеально вписываются в любой веганский
+                                        рацион.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End-->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid footer py-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="footer-item">
+                            <h2 class="fw-bold mb-3">
+                                <span class="text-primary mb-0">Daily</span>
+                                <span class="text-secondary">Vegan</span>
+                            </h2>
+                            <p class="mb-4">
+                                Благодарим за визит на наш сайт здорового
+                                питания. Мы предлагаем свежие, сбалансированные
+                                и вкусные веганские рационы с доставкой. Наша
+                                команда стремится сделать правильное питание
+                                доступным и удобным для каждого. Закажите один
+                                раз — и ощутите разницу каждый день!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="footer-item">
+                            <div
+                                class="d-flex flex-column p-4 ps-5 text-dark border border-primary"
+                                style="border-radius: 0"
+                            >
+                                <p>Понедельник: 8:00 – 17:00</p>
+                                <p>Вторник: 8:00 – 17:00</p>
+                                <p>Среда: 8:00 – 17:00</p>
+                                <p>Четверг: 8:00 – 17:00</p>
+                                <p>Пятница: 8:00 – 17:00</p>
+                                <p>Суббота: 8:00 – 17:00</p>
+                                <p class="mb-0">Воскресенье: выходной</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="footer-item">
+                            <h4
+                                class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+                            >
+                                НАШ АДРЕС
+                            </h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a href="" class="text-body mb-4"
+                                    ><i
+                                        class="fa fa-map-marker-alt text-primary me-3"
+                                    ></i>
+                                    Кенесары көшесі 20, Астана 010000, Казахстан
+                                </a>
+                                <a href="tel:+1000000000" class="text-body mb-4"
+                                    ><i
+                                        class="fa fa-phone-alt text-primary me-3"
+                                    ></i
+                                    >+77011551322</a
+                                >
+                                <a
+                                    href="mailto:info@businessconsult.com"
+                                    class="text-body"
+                                    ><i
+                                        class="fa fa-envelope text-primary me-3"
+                                    ></i>
+                                    daily_vegan@gmail.com</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="footer-item">
+                            <h4
+                                class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+                            >
+                                ССЫЛКИ
+                            </h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a href="index.html" class="text-body mb-4">
+                                    Главная
+                                </a>
+                                <a
+                                    href="terms-of-use.html"
+                                    class="text-body mb-4"
+                                    >Условия использования</a
+                                >
+                                <a href="privacy-policy.html" class="text-body"
+                                    >Политика конфиденциальности
+                                </a>
+                                <a href="cookie_policy.html" class="text-body"
+                                    >Политика использования cookies
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Использование файлов cookies</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Этот сайт использует cookies для обеспечения удобства и
+                    персонализированного взаимодействия.
+                    <a href="cookie_policy.html">Подробнее...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Принять</button>
+                <button class="cookie-button" id="declineBtn">Отклонить</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- Back to Top -->
+        <a
+            href="#"
+            class="btn btn-primary border-3 border-primary rounded-circle back-to-top"
+            ><i class="fa fa-arrow-up"></i
+        ></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
